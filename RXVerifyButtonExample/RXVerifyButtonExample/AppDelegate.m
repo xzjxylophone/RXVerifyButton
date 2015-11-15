@@ -7,16 +7,29 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
+@property (nonatomic, strong) UINavigationController *mainNC;
 
 @end
 
 @implementation AppDelegate
-
+- (void)showMain
+{
+    UIViewController *vc = nil;
+    vc = [[MainViewController alloc] init];
+    self.mainNC = [[UINavigationController alloc] initWithRootViewController:vc];
+    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:19]};
+    [self.mainNC.navigationBar setTitleTextAttributes:dic];
+    self.window.rootViewController = self.mainNC;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self showMain];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		58D6E3FF1BF88209000BC827 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D6E3FE1BF88209000BC827 /* main.m */; };
 		58D6E4021BF88209000BC827 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D6E4011BF88209000BC827 /* AppDelegate.m */; };
-		58D6E4051BF88209000BC827 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D6E4041BF88209000BC827 /* ViewController.m */; };
-		58D6E4081BF88209000BC827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D6E4061BF88209000BC827 /* Main.storyboard */; };
 		58D6E40A1BF88209000BC827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D6E4091BF88209000BC827 /* Assets.xcassets */; };
-		58D6E40D1BF88209000BC827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D6E40B1BF88209000BC827 /* LaunchScreen.storyboard */; };
+		58D6E4171BF88230000BC827 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D6E4151BF88230000BC827 /* MainViewController.m */; };
+		58D6E4181BF88230000BC827 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D6E4161BF88230000BC827 /* MainViewController.xib */; };
+		58D6E41C1BF8823D000BC827 /* RXVerifyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D6E41B1BF8823D000BC827 /* RXVerifyButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,13 @@
 		58D6E3FE1BF88209000BC827 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58D6E4001BF88209000BC827 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58D6E4011BF88209000BC827 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		58D6E4031BF88209000BC827 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		58D6E4041BF88209000BC827 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		58D6E4071BF88209000BC827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58D6E4091BF88209000BC827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		58D6E40C1BF88209000BC827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D6E40E1BF88209000BC827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D6E4141BF88230000BC827 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		58D6E4151BF88230000BC827 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		58D6E4161BF88230000BC827 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		58D6E41A1BF8823D000BC827 /* RXVerifyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXVerifyButton.h; sourceTree = "<group>"; };
+		58D6E41B1BF8823D000BC827 /* RXVerifyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXVerifyButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +59,15 @@
 		58D6E3FC1BF88209000BC827 /* RXVerifyButtonExample */ = {
 			isa = PBXGroup;
 			children = (
+				58D6E4191BF8823D000BC827 /* RXVerifyButton */,
 				58D6E4001BF88209000BC827 /* AppDelegate.h */,
 				58D6E4011BF88209000BC827 /* AppDelegate.m */,
-				58D6E4031BF88209000BC827 /* ViewController.h */,
-				58D6E4041BF88209000BC827 /* ViewController.m */,
-				58D6E4061BF88209000BC827 /* Main.storyboard */,
 				58D6E4091BF88209000BC827 /* Assets.xcassets */,
-				58D6E40B1BF88209000BC827 /* LaunchScreen.storyboard */,
 				58D6E40E1BF88209000BC827 /* Info.plist */,
 				58D6E3FD1BF88209000BC827 /* Supporting Files */,
+				58D6E4141BF88230000BC827 /* MainViewController.h */,
+				58D6E4151BF88230000BC827 /* MainViewController.m */,
+				58D6E4161BF88230000BC827 /* MainViewController.xib */,
 			);
 			path = RXVerifyButtonExample;
 			sourceTree = "<group>";
@@ -77,6 +78,16 @@
 				58D6E3FE1BF88209000BC827 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58D6E4191BF8823D000BC827 /* RXVerifyButton */ = {
+			isa = PBXGroup;
+			children = (
+				58D6E41A1BF8823D000BC827 /* RXVerifyButton.h */,
+				58D6E41B1BF8823D000BC827 /* RXVerifyButton.m */,
+			);
+			name = RXVerifyButton;
+			path = ../../RXVerifyButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +147,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58D6E40D1BF88209000BC827 /* LaunchScreen.storyboard in Resources */,
 				58D6E40A1BF88209000BC827 /* Assets.xcassets in Resources */,
-				58D6E4081BF88209000BC827 /* Main.storyboard in Resources */,
+				58D6E4181BF88230000BC827 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,32 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58D6E4051BF88209000BC827 /* ViewController.m in Sources */,
 				58D6E4021BF88209000BC827 /* AppDelegate.m in Sources */,
+				58D6E4171BF88230000BC827 /* MainViewController.m in Sources */,
+				58D6E41C1BF8823D000BC827 /* RXVerifyButton.m in Sources */,
 				58D6E3FF1BF88209000BC827 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		58D6E4061BF88209000BC827 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58D6E4071BF88209000BC827 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		58D6E40B1BF88209000BC827 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58D6E40C1BF88209000BC827 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		58D6E40F1BF88209000BC827 /* Debug */ = {
@@ -261,7 +253,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RXVerifyButtonExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xzj.RXVerifyButtonExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +266,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RXVerifyButtonExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xzj.RXVerifyButtonExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
