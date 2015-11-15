@@ -1,7 +1,7 @@
 
 
 
-pod::Spec.new do |s|
+Pod::Spec.new do |s|
   s.name     = "RXVerifyButton"
   s.version  = "0.1"
   s.license  = "MIT"
