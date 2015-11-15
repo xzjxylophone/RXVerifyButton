@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="btnCustom" destination="LNJ-hy-rKi" id="66g-N8-i9a"/>
+                <outlet property="btnDefault" destination="oeQ-EQ-dKh" id="qqm-zx-X5W"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +16,37 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeQ-EQ-dKh" customClass="RXVerifyButton">
+                    <rect key="frame" x="47" y="75" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="f8o-Vv-lhN"/>
+                        <constraint firstAttribute="height" constant="30" id="i4c-rn-Mta"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNJ-hy-rKi" customClass="RXVerifyButton">
+                    <rect key="frame" x="47" y="144" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="emN-74-ZJY"/>
+                        <constraint firstAttribute="width" constant="150" id="lOI-oV-j8s"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LNJ-hy-rKi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="QpJ-Wg-icq"/>
+                <constraint firstItem="LNJ-hy-rKi" firstAttribute="top" secondItem="oeQ-EQ-dKh" secondAttribute="top" id="hgy-KQ-6zc"/>
+                <constraint firstItem="LNJ-hy-rKi" firstAttribute="top" secondItem="oeQ-EQ-dKh" secondAttribute="bottom" constant="39" id="jhU-ot-k47"/>
+                <constraint firstItem="oeQ-EQ-dKh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="lzk-7x-BfB"/>
+                <constraint firstItem="oeQ-EQ-dKh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="75" id="zj8-1l-o16"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="hgy-KQ-6zc"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>
