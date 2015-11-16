@@ -24,16 +24,6 @@ const NSString *kRXVBCountDownTextFormatAttributeName = @"kRXVBCountDownTextForm
 @property (nonatomic, assign) E_RX_VerifyStatus last_E_RX_VerifyStatus;
 
 
-////
-//@property (nonatomic, copy) NSString *initalizationBtnTitle; // 初始化的时候按钮的文案
-//@property (nonatomic, copy) NSString *okBtnTitle;   // 设置OK的时候的按钮的文案
-//@property (nonatomic, copy) NSString *againBtnTitle; // 再发一次的按钮的文案
-//@property (nonatomic, copy) NSString *formatShowString; // 倒计时 label 显示的, default format  %ds
-//@property (nonatomic, copy) NSString *showLabelTextColor; // 倒计时的label的字体颜色啊
-//
-
-
-
 @property (nonatomic, strong) NSDictionary *defaultAttribute;
 @property (nonatomic, strong) NSMutableDictionary *currentAttribute;
 

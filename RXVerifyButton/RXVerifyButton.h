@@ -14,13 +14,6 @@ extern const NSString *kRXVBInitBtnTextAttributeName;
 extern const NSString *kRXVBAgainBtnTextAttributeName;
 // default: @"%zds"
 extern const NSString *kRXVBCountDownTextFormatAttributeName;
-//extern const NSString *kRXVBAttributeName;
-//extern const NSString *kRXVBAttributeName;
-//extern const NSString *kRXVBAttributeName;
-//extern const NSString *kRXVBAttributeName;
-//extern const NSString *kRXVBAttributeName;
-//extern const NSString *kRXVBAttributeName;
-//extern const NSString *kRXVBAttributeName;
 
 
 
