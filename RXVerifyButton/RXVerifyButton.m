@@ -73,7 +73,7 @@ const NSString *kRXVBCountDownTextFormatAttributeName = @"kRXVBCountDownTextForm
     switch (e_RX_VerifyStatus) {
         case kE_RX_VerifyStatusInit:
         {
-            [self.lblShow removeFromSuperview];
+            [self.textLabel removeFromSuperview];
             self.enabled = YES;
         }
             break;
@@ -81,14 +81,14 @@ const NSString *kRXVBCountDownTextFormatAttributeName = @"kRXVBCountDownTextForm
         {
             self.usedTime = 1;
             self.enabled = NO;
-            [self addSubview:self.lblShow];
-            [self fillAllInSuperView:self subView:self.lblShow];
+            [self addSubview:self.textLabel];
+            [self fillAllInSuperView:self subView:self.textLabel];
             [self startTimer];
         }
             break;
         case kE_RX_VerifyStatusAgain:
         {
-            [self.lblShow removeFromSuperview];
+            [self.textLabel removeFromSuperview];
             self.enabled = YES;
         }
             break;
@@ -105,7 +105,7 @@ const NSString *kRXVBCountDownTextFormatAttributeName = @"kRXVBCountDownTextForm
         case kE_RX_VerifyStatusInit:
         {
             NSString *text = self.currentAttribute[kRXVBInitBtnTextAttributeName];
-            self.lblShow.text = @"";
+            self.textLabel.text = @"";
             [self setTitle:text forState:UIControlStateNormal];
         }
             break;
@@ -130,7 +130,7 @@ const NSString *kRXVBCountDownTextFormatAttributeName = @"kRXVBCountDownTextForm
 {
     NSString *textFormat = self.currentAttribute[kRXVBCountDownTextFormatAttributeName];
     NSString *text = [NSString stringWithFormat:textFormat, remainTime];
-    self.lblShow.text = text;
+    self.textLabel.text = text;
 }
 
 - (void)startTimer
@@ -220,10 +220,10 @@ const NSString *kRXVBCountDownTextFormatAttributeName = @"kRXVBCountDownTextForm
 {
     CGFloat width = self.frame.size.width;
     CGFloat height = self.frame.size.height;
-    self.lblShow = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width, height)];
-    self.lblShow.backgroundColor = [UIColor clearColor];
-    self.lblShow.textAlignment = NSTextAlignmentCenter;
-    self.lblShow.textColor = [UIColor blackColor];
+    self.textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+    self.textLabel.backgroundColor = [UIColor clearColor];
+    self.textLabel.textAlignment = NSTextAlignmentCenter;
+    self.textLabel.textColor = [UIColor blackColor];
     [self addTarget:self action:@selector(btnTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
     
     

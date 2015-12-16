@@ -34,7 +34,7 @@
                                  kRXVBCountDownTextFormatAttributeName:@"%zds测试",
                                  kRXVBAgainBtnTextAttributeName:@"测试再发一次"};
     self.btnDefault.backgroundColor = [UIColor redColor];
-    self.btnDefault.lblShow.backgroundColor = [UIColor greenColor];
+    self.btnDefault.textLabel.backgroundColor = [UIColor greenColor];
     [self.btnCustom setBtnAttributes:attributes];
 }
 

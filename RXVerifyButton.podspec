@@ -3,8 +3,9 @@
 
 Pod::Spec.new do |s|
   s.name     = "RXVerifyButton"
-  s.version  = "0.1"
+  s.version  = "0.3"
   s.license  = "MIT"
+  s.summary  = "RXVerifyButton is a simple SMS count down"
   s.homepage = "https://github.com/xzjxylophone/RXVerifyButton"
   s.author   = { 'Rush.D.Xzj' => 'xzjxylophoe@gmail.com' }
   s.social_media_url = "http://weibo.com/xzjxylophone"

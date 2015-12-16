@@ -20,8 +20,6 @@
     UIViewController *vc = nil;
     vc = [[MainViewController alloc] init];
     self.mainNC = [[UINavigationController alloc] initWithRootViewController:vc];
-    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:19]};
-    [self.mainNC.navigationBar setTitleTextAttributes:dic];
     self.window.rootViewController = self.mainNC;
 }
 

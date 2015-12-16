@@ -45,7 +45,7 @@ typedef enum E_RX_VerifyStatus {
 @property (nonatomic, assign) NSUInteger maxTime;
 
 // 更改这个lable的属性可以更改倒计时的样式
-@property (nonatomic, strong) UILabel *lblShow;
+@property (nonatomic, strong) UILabel *textLabel;
 
 
 // 更改相关文案的地方
